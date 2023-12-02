@@ -1,0 +1,254 @@
+/* start of global */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --p-color: #777;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+}
+ul {
+  list-style: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+/* small  */
+@media (min-width: 786px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End of global */
+/* Start Of Header */
+header .head {
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0 10px 10px #ddd;
+}
+header .head h1 {
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-size: 15px;
+  margin: 10px;
+  padding: 10px;
+}
+header .head h1 a {
+  text-decoration: none;
+  color: black;
+}
+header .head h1:hover {
+  background-color: #ddd;
+}
+header .head nav {
+  position: relative;
+}
+header .head nav ul {
+  display: flex;
+  padding: 0 20px;
+}
+header .head nav ul li a {
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  letter-spacing: 5px;
+  color: black;
+}
+header .head nav ul li a:hover {
+  background-color: #ddd;
+}
+@media (max-width:767px) {
+  header .head nav ul {
+    display: none;
+  }
+}
+header .image {
+  position: relative;
+}
+header .image p {
+  position: absolute;
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: var(--p-color);
+  bottom: 20px;
+  left: 10px;
+}
+header .image img {
+  width: 100%;
+}
+/* Start Of Header */
+/* start of section about */
+section .about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+section .about img,
+section .about div {
+  width: calc(96%/2);
+}
+section .about img {
+  opacity: .6;
+}
+section .about .text h1 {
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+section .about .text h4 {
+  text-align: center;
+  margin: 30px 0;
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+section .about .text p:first-of-type {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+section .about .text p:first-of-type span {
+  padding: 3px;
+  background-color: #ddd;
+}
+section .about .text p:last-of-type {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--p-color);
+}
+/* End of section about */
+/* start of section about */
+section .menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  padding-bottom: 150px;
+  border-bottom: 2px solid #ddd;
+}
+section .menu img,
+section .menu .text {
+  width: calc(96%/2);
+}
+section .menu img {
+  opacity: .6;
+}
+section .menu .text h1 {
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+section .menu .text div {
+  margin: 50px 0;
+}
+section .menu .text div h3 {
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin: 20px 0;
+}
+section .menu .text div p {
+  color: var(--p-color);
+}
+/* End of section about */
+/* Start of section contact */
+.contact {
+  margin-bottom: 100px;
+}
+.contact h1 {
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+.contact p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+.contact h3 {
+  color: #607d8b;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact form input {
+margin: 10px 0;
+border: 0;
+padding: 16px 8px;
+border-bottom: 2px solid #ddd;
+}
+.contact button {
+  padding: 16px 8px;
+  border: 0;
+  background-color: #eee;
+  margin-top: 30px;
+}
+.contact button a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+/* End of section contact */
+/* Start OF Footer */
+footer {
+  height: 200px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p,
+footer p a {
+  font-size: 20px;
+  color: black;
+}
+/* End Of Footer */
+/* Start Of Media  */
+@media (max-width: 767px) {
+  .about {
+    flex-direction: column;
+  }
+  section .about img,
+  section .about div {
+    width: 100%;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  section .menu .text,
+  section .menu img {
+  width: 100%;
+  }
+  .contact button {
+    padding: 10px;
+  }
+  .contact button a {
+    font-size: 14px;
+  }
+}
+/* Start Of Media  */
